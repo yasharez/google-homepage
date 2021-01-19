@@ -8,6 +8,8 @@
         <Style>
             .ariel-font{
                 font-family: Arial, sans-serif;
+                font-size: 14px;
+                text-align: center;
             }
             .search-bar{
                 height: 34px;
@@ -15,18 +17,24 @@
                 border-radius: 50px;
             }
             .nav-bar{
-                display: flex;
+                padding: 0px 10px;
+                display: grid;
+                grid-template-columns: 6fr 6fr 6fr 6fr 6fr 6fr;
+            }
+            #ul-hov:hover{
+                text-decoration: underline;
             }
             .footer-bar{
-                background-color: gray;
+                background-color: rgb(219, 219, 219);
                 display: flex;
+                flex-direction: row;
             }
         </Style>
         <header class="nav-bar">
-            <div>About</div>
-            <div>Store</div>
-            <div>Gmail</div>
-            <div>Images</div>
+            <div id="ul-hov">About</div>
+            <div id="ul-hov">Store</div>
+            <div id="ul-hov">Gmail</div>
+            <div id="ul-hov">Images</div>
             <div>Apps</div>
             <div>Profile</div>
         </header>
@@ -37,13 +45,13 @@
             <div>I'm Feeling Lucky</div>
         </main>
         <footer class="footer-bar">
-            <div>Advertising</div>
-            <div>Business</div>
-            <div>How Search Works</div>
-            <div>Carbon neutral since 2007</div>
-            <div>Privacy</div>
-            <div>Terms</div>
-            <div>Settings</div>
+            <div id="ul-hov">Advertising</div>
+            <div id="ul-hov">Business</div>
+            <div id="ul-hov">How Search Works</div>
+            <div id="ul-hov">Carbon neutral since 2007</div>
+            <div id="ul-hov">Privacy</div>
+            <div id="ul-hov">Terms</div>
+            <div id="ul-hov">Settings</div>
         </footer>
     </body>
 </html>
