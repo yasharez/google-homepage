@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang-"en">
     <head>
-        <title>Google Home Page</title>
+        <title>Google</title>
     </head>
-    <body>
+    <body class="ariel-font">
         <!-- Actual webpage design-->
-        <header>
+        <Style>
+            .ariel-font{
+                font-family: Arial, sans-serif;
+            }
+            .search-bar{
+                height: 34px;
+                width: 487px;
+                border-radius: 50px;
+            }
+            .nav-bar{
+                display: flex;
+            }
+            .footer-bar{
+                background-color: gray;
+                display: flex;
+            }
+        </Style>
+        <header class="nav-bar">
             <div>About</div>
             <div>Store</div>
             <div>Gmail</div>
@@ -15,9 +32,18 @@
         </header>
         <main>
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-            <input type="text">
+            <input class="search-bar" type="text">
             <div>Google Search</div>
             <div>I'm Feeling Lucky</div>
         </main>
+        <footer class="footer-bar">
+            <div>Advertising</div>
+            <div>Business</div>
+            <div>How Search Works</div>
+            <div>Carbon neutral since 2007</div>
+            <div>Privacy</div>
+            <div>Terms</div>
+            <div>Settings</div>
+        </footer>
     </body>
 </html>
