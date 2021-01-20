@@ -6,6 +6,10 @@
     <body class="ariel-font">
         <!-- Actual webpage design-->
         <Style>
+            .page-grid{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
             .ariel-font{
                 font-family: Arial, sans-serif;
                 font-size: 14px;
@@ -20,6 +24,9 @@
                 background-color: aqua;
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                height: 60px;
+                padding: 6px;
             }
             .nav-bar-left{
                 background-color: grey;
@@ -41,45 +48,53 @@
                 padding: 5px;
                 margin-right: 10px;
             }
+            .nav-bar-right-text{
+                padding-left: 15px;
+                margin: 0px 5px;
+                font-size: 13px;
+            }
             #ul-hov:hover{
                 text-decoration: underline;
             }
+            .button-custom{
+                background-color: rgb(248, 249, 250)
+            }
             .footer-bar{
-                background-color: rgb(219, 219, 219);
+                background-color: rgb(242, 242, 242);
                 display: flex;
                 flex-direction: row;
             }
         </Style>
-        <header>
+        <div class="page-grid">
             <div class="nav-bar">
                 <div class="nav-bar-left">
                     <div id="ul-hov" class="nav-bar-left-text">About</div>
                     <div id="ul-hov" class="nav-bar-left-text">Store</div>
                 </div>
                 <div class="nav-bar-right">
-                    <div id="ul-hov">Gmail</div>
-                    <div id="ul-hov">Images</div>
+                    <div id="ul-hov" class="nav-bar-right-text">Gmail</div>
+                    <div id="ul-hov" class="nav-bar-right-text">Images</div>
                     <div>Apps</div>
                     <div>Profile</div>
                 </div>
             </div>
-        </header>
-        <main>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"><br>
-            <input class="search-bar" type="text">
             <div>
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"><br>
+                <input class="search-bar" type="text">
+                <div>
+                    <button class="button-custom">Google Search</button>
+                    <button class="button-custom">I'm Feeling Lucky</button>
+                </div>
             </div>
-        </main>
-        <footer class="footer-bar">
-            <div id="ul-hov">Advertising</div>
-            <div id="ul-hov">Business</div>
-            <div id="ul-hov">How Search Works</div>
-            <div id="ul-hov">Carbon neutral since 2007</div>
-            <div id="ul-hov">Privacy</div>
-            <div id="ul-hov">Terms</div>
-            <div id="ul-hov">Settings</div>
-        </footer>
+            <div class="footer-bar">
+                <div id="ul-hov">Advertising</div>
+                <div id="ul-hov">Business</div>
+                <div id="ul-hov">How Search Works</div>
+                <div id="ul-hov">Carbon neutral since 2007</div>
+                <div id="ul-hov">Privacy</div>
+                <div id="ul-hov">Terms</div>
+                <div id="ul-hov">Settings</div>
+            </div>
+        </div>
     </body>
 </html>
