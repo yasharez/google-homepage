@@ -17,9 +17,29 @@
                 border-radius: 50px;
             }
             .nav-bar{
-                padding: 0px 10px;
-                display: grid;
-                grid-template-columns: 6fr 6fr 6fr 6fr 6fr 6fr;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+            }
+            .nav-bar-left{
+                background-color: grey;
+                display: flex;
+                justify-content: flex-start;
+                flex-grow: 1;
+                margin-left: 15px;
+                padding: 5px;
+            }
+            .nav-bar-left-text{
+                padding: 5px;
+                margin: 0px 5px;
+            }
+            .nav-bar-right{
+                background-color: red;
+                display: flex;
+                justify-content: flex-end;
+                flex-grow: 1;
+                padding: 5px;
+                margin-right: 10px;
             }
             #ul-hov:hover{
                 text-decoration: underline;
@@ -30,19 +50,27 @@
                 flex-direction: row;
             }
         </Style>
-        <header class="nav-bar">
-            <div id="ul-hov">About</div>
-            <div id="ul-hov">Store</div>
-            <div id="ul-hov">Gmail</div>
-            <div id="ul-hov">Images</div>
-            <div>Apps</div>
-            <div>Profile</div>
+        <header>
+            <div class="nav-bar">
+                <div class="nav-bar-left">
+                    <div id="ul-hov" class="nav-bar-left-text">About</div>
+                    <div id="ul-hov" class="nav-bar-left-text">Store</div>
+                </div>
+                <div class="nav-bar-right">
+                    <div id="ul-hov">Gmail</div>
+                    <div id="ul-hov">Images</div>
+                    <div>Apps</div>
+                    <div>Profile</div>
+                </div>
+            </div>
         </header>
         <main>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"><br>
             <input class="search-bar" type="text">
-            <div>Google Search</div>
-            <div>I'm Feeling Lucky</div>
+            <div>
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
         </main>
         <footer class="footer-bar">
             <div id="ul-hov">Advertising</div>
