@@ -6,10 +6,11 @@
     <body class="ariel-font">
         <!-- Actual webpage design-->
         <Style>
-            .page-grid{
-                display: grid;
-                grid-template-rows: 1fr 1fr 1fr;
-            }
+            /*.page-grid{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }*/
             .ariel-font{
                 font-family: Arial, sans-serif;
                 font-size: 14px;
@@ -25,14 +26,12 @@
                 justify-content: center;
                 align-items: center;
                 height: 60px;
-                padding: 6px;
             }
             .nav-bar-left{
                 display: flex;
                 justify-content: flex-start;
                 flex-grow: 1;
                 margin-left: 15px;
-                padding: 5px;
             }
             .nav-bar-left-text{
                 padding: 5px;
@@ -71,6 +70,7 @@
                 align-items: center;
                 flex-direction: row;
                 color:rgb(112, 117, 122)
+                
             }
             .footer-left{
                 display: flex;
@@ -88,7 +88,7 @@
                 flex-grow: 1;
             }
         </Style>
-        <div class="page-grid">
+        <!-- <div class="page-grid"> -->
             <div class="nav-bar">
                 <div class="nav-bar-left">
                     <div id="ul-hov" class="nav-bar-left-text">About</div>
@@ -124,6 +124,6 @@
                     <div id="ul-hov">Settings</div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </body>
 </html>
