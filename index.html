@@ -11,19 +11,36 @@
                 font-size: 14px;
                 text-align: center;
             }
+            .navigation{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -8px;
+                margin-top: -8px;
+                color:rgb(60, 64, 67);
+                padding: 6px;
+                height: 60px;
+            }
+            .nav-left{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .nav-text-left:first-of-type{
+                margin-left: 15px;
+            }
+            .nav-text-left{
+                padding: 5px;
+                margin: 0px 5px;
+                color: #222;
+            }
+            .nav-right{
+                display: flex;
+                justify-content: flex-end;
+            }
             .search-bar{
                 height: 34px;
                 width: 487px;
                 border-radius: 50px;
-            }
-            .ul-nav{
-                position: fixed;
-                list-style-type: none;
-                top: 0px;
-                color:rgb(34, 34, 34);
-                margin: 0;
-                padding: 0;
-                width: 100%;
             }
             a:hover{
                 text-decoration: underline;
@@ -62,6 +79,7 @@
             .footer-center{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
             .footer-right{
                 display: flex;
@@ -77,14 +95,18 @@
                 margin-right: 6px;
             }
         </Style>
-        <ul class="ul-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-            <li>Apps</li>
-            <li>Profile</li>
-        </ul>
+        <div class="navigation">
+            <div class="nav-left">
+                <a class="nav-text-left" href="#">About</a>
+                <a class="nav-text-left" href="#">Store</a>
+            </div>
+            <div class="nav-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a>Apps</a>
+                <a>Profile</a>
+            </div>
+        </div>
         <div id="center-screen">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"><br>
                 <input class="search-bar" type="text">
