@@ -24,6 +24,7 @@
             .nav-left{
                 display: flex;
                 justify-content: flex-start;
+                align-items: center;
             }
             .nav-text-left:first-of-type{
                 margin-left: 15px;
@@ -36,9 +37,22 @@
             .nav-right{
                 display: flex;
                 justify-content: flex-end;
+                align-items: center;
             }
             .nav-text-right{
                 padding-left: 15px;
+                color: #222;
+            }
+            .nav-image-right{
+                padding-left: 15px;
+            }
+            .nav-account{
+                margin-left: 15px;
+                height: 32px;
+                width: 32px;
+            }
+            .round{
+                border-radius: 50%;
             }
             .search-bar{
                 height: 34px;
@@ -106,8 +120,8 @@
             <div class="nav-right">
                 <a class="nav-text-right" ref="#">Gmail</a>
                 <a class="nav-text-right" href="#">Images</a>
-                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/mobile-web-app-vol-4-1/32/Dots_Menu_list_option_preference_nav_navigation-512.png" alt="Google Apps" width="20px" height="20px"></a>
-                <a>Profile</a>
+                <a class="nav-image-right" href="#"><img src="https://cdn2.iconfinder.com/data/icons/mobile-web-app-vol-4-1/32/Dots_Menu_list_option_preference_nav_navigation-512.png" alt="Google Apps" width="20px" height="20px"></a>
+                <a class="nav-account" href="#"><img class="round" src="https://lh3.googleusercontent.com/ogw/ADGmqu-6mKMUlBQaBiGA2YvlB9fOjD85j1eB8kxVCt72=s32-c-mo" alt="Profile"></a>
             </div>
         </div>
         <div id="center-screen">
